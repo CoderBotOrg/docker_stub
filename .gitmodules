@@ -1,0 +1,3 @@
+[submodule "coderbot"]
+	path = coderbot
+	url = https://github.com/CoderBotOrg/coderbot.git
