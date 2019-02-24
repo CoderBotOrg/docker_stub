@@ -1,3 +1,6 @@
 [submodule "coderbot"]
 	path = coderbot
 	url = https://github.com/CoderBotOrg/coderbot.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/CoderBotOrg/backend.git
