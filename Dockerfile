@@ -1,9 +1,11 @@
-FROM python:3.5
+FROM python:3.9-bullseye
 
-RUN apt-get update -y & apt-get upgrade -y
+RUN apt-get update -y && apt-get install -y ffmpeg libsm6 libxext6 libasound2-dev portaudio19-dev
+
+COPY requirements_stub.txt .
+RUN pip install -r requirements_stub.txt 
 
 COPY backend coderbot
-COPY *.sh ./
-RUN pip3 install -r coderbot/requirements_stub.txt 
+COPY *.sh coderbot/.
 
-CMD ./run.sh
+CMD /coderbot/run.sh

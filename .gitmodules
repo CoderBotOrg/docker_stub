@@ -4,3 +4,4 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/CoderBotOrg/backend.git
+	branch = develop
